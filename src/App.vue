@@ -24,7 +24,7 @@ export default {
     HelloWorld
   },
   mounted() {
-    axios.get('http://localhost:3000/api/users').then(res => {
+    axios.get('/api/users').then(res => {
       this.users = res.data
     })
   }
